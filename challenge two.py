@@ -1,6 +1,6 @@
 s=8
-arreglo=[6,7,8,9,10,2,8,9,10,1,2]
-#arreglo=[1,2,3,4,5,6,7,8,9,10,11,12,3,4,5,6,7,8,9,10,11,1,8,9,10,11,12,3,4,5]
+#arreglo=[6,7,8,9,10,2,8,9,10,1,2]
+arreglo=[1,2,3,4,5,6,7,8,9,10,11,12,3,4,5,6,7,8,9,10,11,1,8,9,10,11,12,3,4,5,8,9,10,11,12,3,4,5,6,7,8,9,10]
 def elevar(arr,nn):
     global arreglo
 
@@ -14,7 +14,6 @@ def elevar(arr,nn):
     new_arr=arr 
     num1=0
     for ii in range (0,len(arr)):
-
         num1=ii
         for i in range(ii,len(new_arr)):        
             if new_arr[i]<new_arr[ii] and new_arr[num1] > new_arr[i]:
@@ -22,8 +21,6 @@ def elevar(arr,nn):
             elif new_arr[i]<new_arr[ii] and new_arr[num1] > new_arr[i]:
                 num1=i
         try:
-            #new_arr.insert(ii,new_arr[num])
-            #del new_arr[num+1]
             new_arr.insert(ii,new_arr.pop(num1))
         except:
             n=0
