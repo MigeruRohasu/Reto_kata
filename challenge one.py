@@ -8,7 +8,7 @@ def crearlista(n):
 def borrar_numeros(arr,s):
     global arreglo
     new_arr=[]
-    
+
     for ii in range(0,len(arr)):
         for i in range(0,len(arr)):
             if arr[i] > 9:
@@ -17,6 +17,7 @@ def borrar_numeros(arr,s):
                 arr.insert(i+1,num%10)
                 break
          
+    
     for ii in range(0,len(arr)):
         for i in range(0,len(arr)-1):             
             if arr[i] == s:
